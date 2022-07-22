@@ -1,0 +1,157 @@
+listarOrden As screen:
+    BackgroundImage: ='5387531193417728'
+    ImagePosition: =ImagePosition.Fill
+
+    Label1_4 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Lato Black'
+        Height: =167
+        Size: =40
+        Text: ="Listar Orden"
+        Width: =472
+        X: =457
+        Y: =40
+        ZIndex: =1
+
+    Image1_4 As image:
+        Height: =137
+        Image: ='324158200291211'
+        Width: =155
+        X: =60
+        Y: =60
+        ZIndex: =2
+
+    Button5_3 As button:
+        Fill: =RGBA(221, 79, 14, 1)
+        Font: =Font.Verdana
+        Height: =57
+        OnSelect: =Navigate(mainView,ScreenTransition.Fade)
+        Text: ="Cerrar"
+        X: =590
+        Y: =576
+        ZIndex: =3
+
+    DataTable3 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =329
+        Items: =orden_producto
+        Width: =1317
+        X: =34
+        Y: =195
+        ZIndex: =4
+
+        Title_Columna3 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Title"
+            FieldName: ="Title"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Title
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        producto_Columna2 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="producto"
+            FieldName: ="producto"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.producto.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        numeroOrden_Columna2 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="numeroOrden"
+            FieldName: ="numeroOrden"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.numeroOrden
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        usuarioSolicitante_Columna2 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="usuarioSolicitante"
+            FieldName: ="usuarioSolicitante"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.usuarioSolicitante
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        usuarioAprobador_Columna2 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="usuarioAprobador"
+            FieldName: ="usuarioAprobador"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.usuarioAprobador
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+        cantidadSolicitada_Columna2 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="cantidadSolicitada"
+            FieldName: ="cantidadSolicitada"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.cantidadSolicitada
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        cantidadAprobada_Columna2 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="cantidadAprobada"
+            FieldName: ="cantidadAprobada"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.cantidadAprobada
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+        anexos_Columna2 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="anexos"
+            FieldName: ="anexos"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =8
+            Text: =ThisItem.anexos
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =8
+

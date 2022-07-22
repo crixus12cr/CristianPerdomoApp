@@ -1,0 +1,93 @@
+listarProducto As screen:
+    BackgroundImage: ='5387531193417728'
+    ImagePosition: =ImagePosition.Fill
+
+    Label1_3 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Lato Black'
+        Height: =167
+        Size: =40
+        Text: ="Listar Producto"
+        Width: =472
+        X: =457
+        Y: =40
+        ZIndex: =1
+
+    Image1_3 As image:
+        Height: =137
+        Image: ='324158200291211'
+        Width: =155
+        X: =60
+        Y: =60
+        ZIndex: =2
+
+    Button5_2 As button:
+        Fill: =RGBA(221, 79, 14, 1)
+        Font: =Font.Verdana
+        Height: =57
+        OnSelect: =Navigate(mainView,ScreenTransition.Fade)
+        Text: ="Cerrar"
+        X: =613
+        Y: =660
+        ZIndex: =3
+
+    "Gallery6 As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
+        Height: =441
+        Items: =registro_productos
+        Layout: =Layout.Vertical
+        TemplatePadding: =4
+        TemplateSize: =Min(870, Self.Height - 60)
+        Width: =476
+        X: =453
+        Y: =182
+        ZIndex: =4
+
+        ProfileImage1 As image:
+            Height: =64
+            Image: =ThisItem.imagenProducto
+            OnSelect: =Select(Parent)
+            Width: =64
+            X: =16
+            Y: =16
+            ZIndex: =1
+
+        Title4 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 112
+            X: =96
+            Y: =ProfileImage1.Y + (ProfileImage1.Height / 2) - (Self.Height / 2)
+            ZIndex: =2
+
+        Image5 As image:
+            Height: =Min(Self.Width, Parent.TemplateHeight - 180)
+            Image: =ThisItem.imagenProducto
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth - 32
+            X: =16
+            Y: =96
+            ZIndex: =3
+
+        Body1 As label:
+            AutoHeight: =true
+            Height: =Self.Size * 4
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.ID
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 32
+            X: =16
+            Y: =Image5.Y + Image5.Height + 16
+            ZIndex: =4
+

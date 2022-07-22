@@ -1,0 +1,60 @@
+mainView As screen:
+    BackgroundImage: ='5387531193417728'
+    ImagePosition: =ImagePosition.Fill
+
+    Image1 As image:
+        Height: =137
+        Image: ='324158200291211'
+        Width: =155
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+    Label1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Lato Black'
+        Height: =167
+        Size: =40
+        Text: ="Administracion de Productos"
+        Width: =472
+        X: =457
+        Y: =40
+        ZIndex: =2
+
+    Button1 As button:
+        Height: =82
+        OnSelect: =Navigate(registrarProducto,ScreenTransition.Fade)
+        Text: ="Registrar Producto"
+        Width: =262
+        X: =195
+        Y: =350
+        ZIndex: =3
+
+    Button2 As button:
+        Height: =75
+        OnSelect: =Navigate(listarProducto,ScreenTransition.Fade)
+        Text: ="Listar Productos"
+        Width: =251
+        X: =850
+        Y: =357
+        ZIndex: =4
+
+    Button3 As button:
+        Height: =82
+        OnSelect: =Navigate(registrarOrden,ScreenTransition.Fade)
+        Text: ="Registrar Orden"
+        Width: =245
+        X: =195
+        Y: =502
+        ZIndex: =5
+
+    Button4 As button:
+        Height: =82
+        OnSelect: =Navigate(listarOrden,ScreenTransition.Fade)
+        Text: ="Listar Orden"
+        Width: =251
+        X: =850
+        Y: =502
+        ZIndex: =6
+
